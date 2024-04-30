@@ -14,7 +14,7 @@ public class Perro {
 		return this.nombre;
 	}
 
-	public void setNombre(int edad) {
+	public void setEdad(int edad) {
 		this.edad = edad;
 	}
 

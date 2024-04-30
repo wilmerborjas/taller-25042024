@@ -10,23 +10,23 @@ public class Vaca {
 		this.raza = raza;
 	}
 
-	public String getraza() {
+	public String getRaza() {
 		return this.raza;
 	}
 
-	public void setcantidadCuerno(int cantidadCuerno) {
+	public void setCantidadCuerno(int cantidadCuerno) {
 		this.cantidadCuerno = cantidadCuerno;
 	}
 
-	public int getcantidadCuerno() {
+	public int getCantidadCuerno() {
 		return this.cantidadCuerno;
 	}
 
-	public void settamanio(double tamanio) {
+	public void setTamanio(double tamanio) {
 		this.tamanio = tamanio;
 	}
 
-	public double gettamanio() {
+	public double getTamanio() {
 		return this.tamanio;
 
 	}
