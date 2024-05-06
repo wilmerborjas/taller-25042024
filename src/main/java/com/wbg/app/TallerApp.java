@@ -1,26 +1,17 @@
 package com.wbg.app;
 
-import com.wbg.app.animal.Perro;
-import com.wbg.app.animal.Vaca;
+import com.wbg.app.facturacion.Factura;
+import com.wbg.app.facturacion.Producto;
 
 public class TallerApp {
 	public static void main(String[] args) {
+		Producto producto = new Producto();
+		producto.setNombre("Lavadora");
+		producto.setCantidad(2);
+		producto.setValorUnitario(1200);
 
-		Perro perro = new Perro();
-		perro.setNombre("Firu");
-		perro.setEdad(10);
-		perro.setPeso(12.5);
-
-		System.out.println(
-				"Perro: Nombre = " + perro.getNombre() + ", Edad = " + perro.getEdad() + ", Peso = " + perro.getPeso());
-
-		Vaca vaca = new Vaca();
-		vaca.setRaza("angus");
-		vaca.setCantidadCuerno(2);
-		vaca.setTamanio(2.55);
-
-		System.out.println("Vaca: Raza = " + vaca.getRaza() + ", Cuernos = " + vaca.getCantidadCuerno() + ", Tamaño = "
-				+ vaca.getTamanio());
+		Factura factura = new Factura();
+		factura.getFactura(producto);
 
 	}
 }
